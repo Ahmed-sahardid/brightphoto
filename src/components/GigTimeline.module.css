@@ -1,0 +1,89 @@
+/* GigTimeline.module.css */
+.timeline {
+  background: #dde0ea;
+  padding: 2rem;
+}
+.heading {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  border-left: 6px solid #fec500;
+  padding-left: .5rem;
+  margin-bottom: 1.5rem;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.card {
+  background: white;
+  border-radius: 4px;
+  flex: 1 1 calc(50% - 1rem);
+  display: flex;
+  position: relative;
+}
+.date {
+  flex: 0 0 80px;
+  text-align: center;
+  border-right: 2px dashed #ccc;
+  position: relative;
+  padding: 1rem 0;
+}
+.date time {
+  display: block;
+}
+.date span:first-child {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.date span:last-child {
+  text-transform: uppercase;
+}
+.content {
+  padding: 1rem;
+  position: relative;
+  flex: 1;
+}
+.category {
+  font-size: 0.75rem;
+  color: #888;
+}
+.title {
+  margin: .5rem 0;
+  font-size: 1.2rem;
+}
+.eventInfo {
+  display: flex;
+  align-items: center;
+  font-size: .85rem;
+  margin-bottom: .5rem;
+}
+.icon {
+  margin-right: .5rem;
+  color: #fec500;
+}
+.badge {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  padding: .25rem .75rem;
+  border-radius: 2px;
+  font-size: .75rem;
+  color: white;
+}
+.badgePending {
+  background: #bbb;
+}
+.badgeCompleted {
+  background: #28a745;
+}
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 100%;
+  }
+  .date {
+    border-right: none;
+    border-bottom: 2px dashed #ccc;
+  }
+}
